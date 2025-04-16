@@ -16,7 +16,6 @@
 html {
   scroll-behavior: smooth;
   font-family: "IBM Plex Sans Arabic", sans-serif;
-
 }
 
 body {
@@ -40,7 +39,7 @@ header {
   margin-top: 20px;
   margin-right: 100px;
   background-color: #fff;
-  padding: 0 140px;  
+  padding: 0 140px;
 }
 .logo-img {
   width: 172px;
@@ -90,8 +89,6 @@ header {
   text-decoration: none;
 }
 
-
-
 a {
   color: #000000;
   transition: 0.5s;
@@ -135,8 +132,6 @@ a i {
 
 /* End request-service */
 
-
-
 /* Start Hero Section */
 .heroSection {
   display: flex;
@@ -147,7 +142,7 @@ a i {
   height: 100%;
   max-height: 444.97px;
   gap: 30px;
-  margin: 226px auto 0; 
+  margin: 226px auto 0;
 }
 
 .heroImge {
@@ -185,6 +180,8 @@ a i {
 @media (max-width: 768px) {
   /* ---------- الهيدر ---------- */
   header {
+    width: 420px !important;
+    max-width: 390px !important;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -217,7 +214,8 @@ a i {
     cursor: pointer;
     order: 1;
     position: absolute;
-    left: 60px;
+    left: 20px;
+    margin-top: -5px;
   }
 
   /* ---------- الهيرو ---------- */
@@ -236,7 +234,7 @@ a i {
     width: 100%;
     max-width: 100%;
     height: auto;
-    text-align: left;  
+    text-align: left;
   }
 
   .heroImge img {
@@ -258,7 +256,6 @@ a i {
     margin: 10px 0;
     line-height: 1.6;
     text-align: center;
-
   }
 
   .heroText h3 {
@@ -272,8 +269,7 @@ a i {
     padding: 10px 24px;
   }
 }
-
-
+ 
 /* Start aboutUsSection */
 /* Start aboutUsSection */
 .aboutUsSection {
@@ -281,7 +277,7 @@ a i {
   width: 100%;
   overflow: hidden;
   direction: rtl;
- }
+}
 
 .aboutUsBackground {
   width: 100%;
@@ -456,7 +452,6 @@ a i {
   width: 470px;
   height: auto;
   margin-right: -100px;
-
 }
 
 .service-text h3 {
@@ -483,6 +478,79 @@ a i {
   margin-bottom: 10px;
 }
 
+/* media services-section */
+@media (max-width: 767px) {
+  .serviceses {
+    margin-top: 0;
+    padding: 40px 16px;
+    text-align: center;
+  }
+
+  .serviceses h2 {
+    font-size: 26px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+
+  /* -------- قسم الخدمة فقط -------- */
+  .services-section .service-content {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .services-section .service-image img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .services-section .service-text {
+    width: 100%;
+    margin: 0;
+    margin-top: 20px;
+  }
+
+  .services-section .service-text h3 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
+  .services-section .service-text .highlight {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .services-section .service-text p {
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .services-section .request-service-btn {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-top: 10px;
+  }
+  .services-section .service-image {
+    order: 0;
+    margin-top: 200px;
+    margin-left: 20px;
+  }
+
+  .services-section .service-text {
+    order: 1;
+  }
+}
 
 
 /* End services-section */
@@ -533,7 +601,7 @@ a i {
   color: #219ebc;
   font-size: 16px;
   margin-bottom: 10px;
- margin-top: 0;
+  margin-top: 0;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -552,6 +620,27 @@ a i {
   margin: 0;
   margin-right: 25px;
 }
+@media (max-width: 767px) {
+  .solutions-grid {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .solution-card {
+    width: 330px;
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+
+  .solution-card h4 {
+    font-size: 18px;
+  }
+
+  .solution-card p {
+    font-size: 15px;
+    margin-right: 0;
+  }
+}
 
 /* End solutions-section */
 
@@ -559,7 +648,7 @@ a i {
   padding: 60px 20px;
   background-color: #f9f9f9;
   direction: rtl;
-   text-align: center;
+  text-align: center;
 }
 
 .form-container {
@@ -635,11 +724,56 @@ textarea {
 .submit-button:hover {
   background-color: #2c8da9;
 }
+@media (max-width: 767px) {
+  .service-request-section {
+    padding: 40px 16px;
+  }
+
+  .form-container {
+    padding: 30px 16px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+  }
+
+  .form-container h2 {
+    font-size: 22px;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+
+  .form-container p {
+    font-size: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .form-group {
+    width: 100%;
+  }
+
+  input,
+  select,
+  textarea {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .submit-button {
+    font-size: 16px;
+    padding: 12px;
+    margin-top: 10px;
+  }
+}
+
 /* footer */
 .site-footer {
   background-color: #0f2b44;
   color: white;
-   direction: rtl;
+  direction: rtl;
 }
 
 .footer-top {
@@ -719,10 +853,66 @@ textarea {
   opacity: 0.7;
 }
 
+@media screen and (max-width: 430px) {
+  .site-footer {
+    background-color: rgba(18, 39, 59, 1);
+    padding: 20px;
+  }
 
+  .footer-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
 
+  .footer-column {
+    width: 100%;
+    text-align: center;
+  }
 
+  /* الشعار */
+  .footer-column:nth-child(1) .footer-logo {
+    width: 172px;
+    margin: 0 auto;
+  }
 
+  /* السوشيال */
+  .footer-column:nth-child(1) .social-icons {
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .footer-column:nth-child(1) .social-icons img {
+    width: 25px;
+    height: 25px;
+  }
+
+  /* القائمة + خدماتنا جنب بعض */
+  .footer-column:nth-child(2),
+  .footer-column:nth-child(3) {
+    display: inline-block;
+    width: 48%;
+    vertical-align: top;
+    text-align: center;
+  }
+
+  /* تواصل معنا */
+  .footer-column:nth-child(4) {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .footer-bottom {
+    background-color: #0c253a;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+  }
+}
+
+/* End footer  */
 /* Popup Overlay */
 .popup-overlay {
   position: fixed;
@@ -757,7 +947,7 @@ textarea {
 /* Close Button */
 .close-popup-btn {
   margin-top: 20px;
-  background-color:  white;
+  background-color: white;
   color: red;
   padding: 10px 20px;
   border: 1px solid red;
@@ -765,7 +955,25 @@ textarea {
   cursor: pointer;
   font-weight: bold;
 }
+@media screen and (max-width: 430px) {
+  .popup-content {
+    width: 80%;
+    padding: 20px 15px;
+    border-radius: 8px;
+  }
 
+  .popup-icon {
+    width: 40px;
+    margin-bottom: 10px;
+  }
+
+  .close-popup-btn {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 16px;
+    margin-top: 15px;
+  }
+}
 
 /* خارج الميديا */
 .mobile-menu {
@@ -801,8 +1009,6 @@ textarea {
   width: 100%;
 }
 
-
-
 /* إخفاء عناصر الجوال على الشاشات الكبيرة */
 .menu-toggle,
 .mobile-menu {
@@ -814,12 +1020,9 @@ textarea {
   }
 
   .mobile-menu {
-    display: none; /* سيتم تفعيله بالـ JS */
+    display: none;
   }
 }
-
-
-
 
 .request-service-btn {
   font-family: "IBM Plex Sans Arabic", sans-serif;
@@ -842,7 +1045,6 @@ textarea {
   transform: translateY(0);
 }
 
-
 .mobile-menu {
   position: fixed;
   top: 0;
@@ -862,7 +1064,6 @@ textarea {
 }
 
 .mobile-menu-header {
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -874,7 +1075,7 @@ textarea {
 }
 
 .menu-close {
-  margin-left:80px;
+  margin-left: 80px;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -899,11 +1100,9 @@ textarea {
   color: black;
   font-size: 18px;
   font-weight: bold;
-
 }
 
 .mobile-bottom {
-
   text-align: center;
 }
 
@@ -931,3 +1130,44 @@ textarea {
   max-width: 300px;
   cursor: pointer;
 }
+
+@media (max-width: 767px) {
+  .aboutUsSection {
+    margin-top: 0;
+    padding: 0;
+  }
+  .aboutUsBackground {
+    background-image: url("../img/backemobile.jpg") !important;
+    background-size: cover;
+    background-position: center;
+    width: 390px;
+    padding: 40px 20px;
+    height: 330px;
+    margin: 60px 0;
+  }
+  .about-overlay-icon {
+    display: none;
+  }
+  .about-icons-mobile {
+    display: none;
+  }
+  .aboutUsContent {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  .aboutUsContent h2 {
+    font-size: 36px;
+    margin-top: -10px;
+    text-align: center;
+  }
+  .aboutUsContent p {
+    font-size: 16px;
+    margin: 10px 0;
+    text-align: center;
+  }
+}
+
+
+
