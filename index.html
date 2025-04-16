@@ -56,12 +56,37 @@
     <div class="header-actions">
       <a href="#" class="lang">English</a>
       <a href="#request">
-        <button class="request-service-btn">اطلب الخدمة</button>
+        <button class="request-services-btn">اطلب الخدمة</button>
       </a>
-
-
     </div>
-    
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu-header">
+        <img src="assets/img/Logo/Logo.png" alt="Logo" class="mobile-logo" />
+        <div class="menu-close">
+          <a href="#" class="lang">English</a>
+          <span class="close-icon" onclick="toggleMenu()">✕</span>
+        </div>
+      </div>
+
+      <div class="mobile-links">
+        <a href="#about-us">من نحن</a>
+        <a href="#services">خدماتنا</a>
+      </div>
+
+      <div class="mobile-bottom">
+        <div class="social-icons">
+          <img src="assets/img/Socialmedialinks/mdi_twitter.svg" alt="Twitter" />
+          <img src="assets/img/Socialmedialinks/Link - انتسجرام.svg" alt="Instagram" />
+          <img src="assets/img/Socialmedialinks/Link - تويتر.svg" alt="X" />
+          <img src="assets/img/Socialmedialinks/Link - فيسبووك.svg" alt="Facebook" />
+        </div>
+        <button class="request-service-btn">اطلب الخدمة</button>
+      </div>
+    </div>
+
+
   </header>
 
   <span class="line"></span>
@@ -81,7 +106,7 @@
         <button class="request-service-btn">اطلب الخدمة</button>
       </a>
     </div>
-   
+
 
   </section>
 
@@ -103,6 +128,20 @@
         </p>
       </div>
     </div>
+    <!-- <div class="about-icons-mobile">
+  <img src="assets/img/ico/Group.png" class="group-icon group" alt="Group" />
+  <img src="assets/img/ico/Group-1.png" class="group-icon group-1" alt="Group-1" />
+  <img src="assets/img/ico/Group-2.png" class="group-icon group-2" alt="Group-2" />
+  <img src="assets/img/ico/Group-3.png" class="group-icon group-3" alt="Group-3" />
+  
+  <img src="assets/img/ico/Polygon 1.png" class="polygon polygon-1" alt="Polygon 1" />
+  <img src="assets/img/ico/Polygon 3.png" class="polygon polygon-3" alt="Polygon 3" />
+  <img src="assets/img/ico/Polygon 4.png" class="polygon polygon-4" alt="Polygon 4" />
+  <img src="assets/img/ico/Polygon 5.png" class="polygon polygon-5" alt="Polygon 5" />
+
+  <img src="assets/img/ico/Vector 1.png" class="vector vector-1" alt="Vector 1" />
+  <img src="assets/img/ico/Vector 2.png" class="vector vector-2" alt="Vector 2" />
+</div> -->
   </section>
 
   <!-- End About Us Section -->
@@ -219,13 +258,14 @@
           <p>فريقنا المتخصص يضمن وصول بضائعك إلى وجهتها بأمان وفي الوقت المحدد (برياً، بحريا، جوياً)</p>
 
           <p id="summary">
-             قد يكون التنقل عبر الشحن الدولي معقدًا. يتعامل فريقنا ذو الخبرة مع جميع جوانب الشحن الدولي، بما في ذلك
+            قد يكون التنقل عبر الشحن الدولي معقدًا. يتعامل فريقنا ذو الخبرة مع جميع جوانب الشحن الدولي، بما في ذلك
             التخليص الجمركي والتوثيق والامتثال، حتى تتمكن من الشحن بثقة
             <span id="dots">... </span>
             <a id="toggle-btn" style="cursor: pointer; color: #219ebc; font-weight: bold;">قراءة المزيد</a>
           </p>
 
-          <div id="more-text" style="display: none;" class="service-text p">
+
+          <div id="more-text" style="display: none; margin-right: 0;" class="service-text p">
             <p>نقدم العديد من التسهيلات التي تضمن وصول بضائعكم في الجدول الزمني المتفق عليه وبأقل نسبة تكاليف.</p>
             <p>نحن نستوعب احتياجات النقل الفريدة من خلال الخدمات المتخصصة للسلع الهشة أو القابلة للكسر أو كبيرة الحجم أو
               ثقيلة أو الحساسة للحرارة. فريقنا مدرب على التعامل مع شحنتك بأقصى قدر من العناية.</p>
@@ -239,7 +279,6 @@
             <button class="request-service-btn">اطلب الخدمة الآن</button>
           </a>
         </div>
-
         <div class="service-image">
           <img src="assets/img/Service/Service 3.png" alt="سلسلة التوريد" />
         </div>
@@ -254,7 +293,7 @@
   <section class="services-section" id="distribution-management" style="display: none;">
     <div class="container">
       <div class="service-content">
-        <div class="service-text">
+        <div class="service-text" style="margin-right: 20px;">
           <h3>إدارة التوزيع</h3>
           <p class="highlight">
             حلول توزيع مبسطة تضمن لك انتشار أكبر في السوق
@@ -310,7 +349,7 @@
   <section class="services-section" id="land-transportation" style="display: none;">
     <div class="container">
       <div class="service-content">
-        <div class="service-text">
+        <div class="service-text" style="margin-right: -5px;">
           <h3> النقل البري </h3>
           <p class="highlight">
             نحن ندرك أن التوصيل السريع عامل مهم جداً لدى أي عميل في الطلب من أي علامة تجارية ولهذا السبب لدينا أسطول قوي
@@ -338,8 +377,6 @@
     </div>
   </section>
   <!-- End services-section -->
-
-
 
 
 
@@ -484,7 +521,7 @@
       <div class="solutions-grid">
 
         <div class="solution-card">
-          <h4><img src="assets/img/Icons/IconName=Distributionnetwork .png" alt=" شبكة توزيع شاملة  " />شبكة توزيع شاملة
+          <h4><img src="assets/img/Icons/IconName=Distributionnetwork.png" alt=" شبكة توزيع شاملة  " />شبكة توزيع شاملة
           </h4>
           <p> استغل شبكة التوزيع الواسعة لدينا داخل وخارج المملكة؛ لضمان وصول منتجاتك إلى العملاء بسرعة وكفاءة. لدينا
             مستودعات ومراكز توزيع تقع بشكل استراتيجي لتسهيل عمليات التسليم في الوقت المناسب.</p>
@@ -510,9 +547,6 @@
     </div>
   </section>
   <!-- End solutions-section -->
-
-
-
 
 
 
@@ -579,10 +613,6 @@
 
     </div>
   </section>
-
-
-
-
 
 
 
@@ -710,26 +740,28 @@
     });
   </script>
 
-<script>
-  const form = document.querySelector('.service-form');
-  const popup = document.getElementById('successPopup');
-  const closeBtn = document.getElementById('closePopup');
+  <script>
+    const form = document.querySelector('.service-form');
+    const popup = document.getElementById('successPopup');
+    const closeBtn = document.getElementById('closePopup');
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      popup.style.display = 'flex';
+      form.reset();
+    });
+    closeBtn.addEventListener('click', () => {
+      popup.style.display = 'none';
+    });
+  </script>
 
-  form.addEventListener('submit', function (e) {
-    e.preventDefault(); // منع الإرسال الفعلي
 
-    // إظهار البوب أب
-    popup.style.display = 'flex';
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("mobileMenu");
+      menu.classList.toggle("active");
+    }
 
-    // reset النموذج (اختياري)
-    form.reset();
-  });
-
-  closeBtn.addEventListener('click', () => {
-    popup.style.display = 'none';
-  });
-</script>
-
+  </script>
 
 
 </body>
