@@ -148,7 +148,6 @@ a i {
     margin-top: 5px;
   }
 
-  /* قائمة الجوال */
   .mobile-menu {
     display: none;
     flex-direction: column;
