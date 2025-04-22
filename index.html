@@ -2,71 +2,54 @@
 <html lang="ar" dir="rtl">
 
 <head>
-  <!-- Charset -->
+  <!-- Set the character encoding for the document -->
   <meta charset="UTF-8">
-  <!-- Responsive Design -->
+  <!-- Enable responsive design on all devices -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Title -->
+  <!-- Page title shown in the browser tab -->
   <title>Pass | حلول لوجستية متكاملة وذكية</title>
-  <!-- Description (SEO) -->
+  <!-- Short description for SEO and search engines -->
   <meta name="description"
     content="شركة Pass تقدم حلول لوجستية ذكية ومتكاملة لرفع كفاءة الأعمال وتحسين نتائج التوصيل وخدمة العملاء.">
-  <!-- Keywords  -->
+  <!-- Relevant keywords to help with SEO -->
   <meta name="keywords" content="لوجستيات, توصيل, حلول ذكية, Pass, نقل, شحن, خدمات لوجستية, إدارة الشحن, تتبع الطلبات">
-  <!-- Author -->
+  <!-- Name of the website  -->
   <meta name="author" content="Pass Logistics Company">
-  <!-- Robots (للسماح لمحركات البحث بالأرشفة) -->
-  <!-- <meta name="robots" content="index, follow"> -->
-  <!-- Favicon -->
+  <!--  Icon Website -->
   <link rel="icon" href="assets/img/Logo/Logo.png" type="image/x-icon">
-  <!-- Open Graph (مشاركة على فيسبوك وغيره) -->
-  <!-- <meta property="og:title" content="Pass | حلول لوجستية متكاملة">
-<meta property="og:description" content="نساعدك في رفع كفاءة أعمالك عبر حلول لوجستية متقدمة وسهلة الاستخدام.">
-<meta property="og:image" content="https://yourwebsite.com/assets/img/share.jpg">
-<meta property="og:url" content="https://yourwebsite.com">
-<meta property="og:type" content="website"> -->
-  <!-- Twitter Card -->
-  <!-- <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Pass | حلول لوجستية متكاملة">
-<meta name="twitter:description" content="نقدم حلول شحن متكاملة وذكية لرفع كفاءة أعمالك.">
-<meta name="twitter:image" content="https://yourwebsite.com/assets/img/share.jpg"> -->
+  <!-- Link CSS stylesheet -->
   <link rel="stylesheet" href="assets/css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;700&display=swap"
-    rel="stylesheet">
-
+  <!-- Font from Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <!-- Start Header -->
-
+  <!-- ==== Start Header ==== -->
+   <!-- Desktop  -->
   <header class="header">
     <img class="logo-img" src="assets/img/Logo/Logo.png" alt="Logo" />
-
     <nav class="navbar">
       <ul class="navbar-list">
-        <li class="navbar-item about-us">
-          <a class="nav-link scrollto" href="#about-us">من نحن</a>
-        </li>
-        <li class="navbar-item services">
-          <a class="nav-link scrollto" href="#services">خدماتنا</a>
-        </li>
+        <li class="navbar-item about-us"><a class="nav-link scrollto" href="#about-us">من نحن</a></li>
+        <li class="navbar-item services"><a class="nav-link scrollto" href="#services">خدماتنا</a></li>
       </ul>
     </nav>
 
     <div class="header-actions">
       <a href="#" class="lang">English</a>
-      <a href="#request">
-        <button class="request-services-btn">اطلب الخدمة</button>
-      </a>
+      <a href="#request"><button class="request-services-btn">اطلب الخدمة</button></a>
     </div>
-    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <!-- mobile  -->
+    <button class="menu-toggle" onclick="Menu()">☰</button>
 
     <div class="mobile-menu" id="mobileMenu">
+
       <div class="mobile-menu-header">
         <img src="assets/img/Logo/Logo.png" alt="Logo" class="mobile-logo" />
         <div class="menu-close">
           <a href="#" class="lang">English</a>
-          <span class="close-icon" onclick="toggleMenu()">✕</span>
+          <span class="close-icon" onclick="Menu()">✕</span>
         </div>
       </div>
 
@@ -76,22 +59,24 @@
       </div>
 
       <div class="mobile-bottom">
-        <div class="social-icons">
+        <div class="social-iconses">
           <img src="assets/img/Socialmedialinks/mdi_twitter.svg" alt="Twitter" />
           <img src="assets/img/Socialmedialinks/Link - انتسجرام.svg" alt="Instagram" />
           <img src="assets/img/Socialmedialinks/Link - تويتر.svg" alt="X" />
           <img src="assets/img/Socialmedialinks/Link - فيسبووك.svg" alt="Facebook" />
         </div>
-        <button class="request-service-btn">اطلب الخدمة</button>
+        <a href="#request">
+          <button class="request-service-btn" style="text-align: center;">اطلب الخدمة</button>
+        </a>
       </div>
+
     </div>
-
-
   </header>
-
   <span class="line"></span>
   <!-- End Header -->
 
+  
+  
   <!-- Start Hero Section -->
   <section class="heroSection">
     <div class="heroImge">
@@ -109,11 +94,10 @@
 
 
   </section>
-
   <!-- End Hero Section -->
 
   <!-- Start About Us Section -->
-  <section class="aboutUsSection">
+  <section class="aboutUsSection" id="about-us">
     <div class="aboutUsBackground">
       <img src="assets/img/HowweareImage.svg" alt="رمزية من نحن" class="about-overlay-icon" />
       <div class="aboutUsContent">
@@ -130,32 +114,12 @@
     </div>
  
   </section>
-
   <!-- End About Us Section -->
 
 
-  <!-- Start services-section -->
-  <!-- <section class="serviceses">
-    <div class="container">
-      <h2>خدماتنا</h2>
-      <p class="subtitle">نحن نسعى من أجل راحتك في تقديم أفضل الخدمات</p>
-
-      <div class="services-filter">
-        <button class="filter-btn active index">إدارة سلسلة التوريد
-          والاستشارات</button>
-        <button class="filter-btn customs">التخليص الجمركي</button>
-        <button class="filter-btn shipping">خدمات الشحن الدولي</button>
-        <button class="filter-btn distribution">إدارة التوزيع</button>
-        <button class="filter-btn storage">خدمات التخزين</button>
-        <button class="filter-btn road-transport">النقل البري</button>
-      </div>
-    </div>
-  </section> -->
-  <!-- End services-section -->
-
 
   <!-- Start services-header-section -->
-  <section class="serviceses">
+  <section class="serviceses" id="services">
     <div class="container">
       <h2>خدماتنا</h2>
       <p class="subtitle">نحن نسعى من أجل راحتك في تقديم أفضل الخدمات</p>
@@ -366,62 +330,7 @@
   <!-- End services-section -->
 
 
-
-
-
   <!-- Start solutions-section -->
-  <!-- <section class="solutions-section">
-    <div class="container">
-      <h2 class="section-title highlighted-title">حزمة حلولنا</h2>
-  
-      <div class="solutions-grid"> -->
-
-  <!-- تحليل الخبراء -->
-  <!-- <div class="solution-card">
-          <h4>
-            <img src="assets/img/Icons/IconName=statistics.png" alt="تحليل الخبراء" />
-            تحليل الخبراء
-          </h4>
-          <p>نقوم بتحليل عمليات سلسلة التوريد الحالية لديك لتحديد حالات عدم الكفاءة وفرص التحسين.</p>
-        </div> -->
-
-  <!-- حلول مخصصة -->
-  <!-- <div class="solution-card">
-          <h4>
-            <img src="assets/img/Icons/IconName=consult.png" alt="حلول مخصصة" />
-            حلول مخصصة
-          </h4>
-          <p>خدماتنا الاستشارية مصممة لتلبية الاحتياجات الفريدة لشركتك، وضمان الأداء الأفضل.</p>
-        </div> -->
-
-  <!-- التخطيط الاستراتيجي -->
-  <!-- <div class="solution-card">
-          <h4>
-            <img src="assets/img/Icons/IconName=strategyicon.png
-            " alt="التخطيط الاستراتيجي" />
-            التخطيط الاستراتيجي
-          </h4>
-          <p>نساعدك على وضع خطط استراتيجية تتوافق مع أهدافك وتعزز فعالية سلسلة التوريد بشكل عام.</p>
-        </div> -->
-
-  <!-- دعم التنفيذ -->
-  <!-- <div class="solution-card">
-          <h4>
-            <img src="assets/img/Icons/IconName=Support.png" alt="دعم التنفيذ" />
-            دعم التنفيذ
-          </h4>
-          <p>نرشدك خلال تنفيذ استراتيجيات جديدة، مما يضمن انتقالًا سلسًا ونتائج قابلة للقياس.</p>
-        </div>
-  
-      </div>
-    </div>
-  </section> -->
-  <!-- End solutions-section -->
-
-
-
-  <!-- Start solutions-section -->
-  <!-- حزمة حلول - إدارة سلسلة التوريد -->
   <section class="solutions-section" id="supply-solutions" style="display: block;">
     <div class="container">
       <h2 class="section-title highlighted-title">حزمة حلولنا</h2>
@@ -500,8 +409,6 @@
     </div>
   </section>
 
-
-  <!-- حزمة حلول - إدارة التوزيع -->
   <section class="solutions-section" id="distribution-solutions" style="display: none;">
     <div class="container">
       <h2 class="section-title highlighted-title">حزمة حلولنا</h2>
@@ -534,9 +441,6 @@
     </div>
   </section>
   <!-- End solutions-section -->
-
-
-
 
 
 
@@ -617,7 +521,7 @@
       </div>
 
 
-      <div class="footer-column">
+      <div class="footer-column" style="width: 150px;">
         <h4>القائمة</h4>
         <ul>
           <li><a href="#">من نحن</a></li>
@@ -649,10 +553,27 @@
       <p>pass©2024</p>
     </div>
   </footer>
-
   <!-- End Footer -->
 
 
+
+  
+  <!-- Start mobileMenu -->
+  <script>
+    function Menu() {
+      const mobileMenu = document.getElementById("mobileMenu");
+      mobileMenu.classList.toggle("active");
+    }
+  
+    document.querySelectorAll('.mobile-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById("mobileMenu").classList.remove("active");
+      });
+    });
+  </script>
+  <!-- End mobileMenu -->
+
+<!-- Start International shipping services -->
   <script>
     const toggleBtn = document.getElementById("toggle-btn");
     const toggleLess = document.getElementById("toggle-less");
@@ -674,18 +595,18 @@
       summary.scrollIntoView({ behavior: 'smooth' });
     });
   </script>
+<!-- End International shipping services -->
 
+<!-- Start filter services -->
   <script>
     const filterButtons = document.querySelectorAll(".filter-btn");
     const serviceSections = document.querySelectorAll(".services-section");
 
     filterButtons.forEach((btn) => {
       btn.addEventListener("click", () => {
-        // إزالة التفعيل من كل الأزرار
         filterButtons.forEach((b) => b.classList.remove("active"));
         btn.classList.add("active");
 
-        // عرض القسم المطلوب وإخفاء البقية
         const targetId = btn.getAttribute("data-target");
         serviceSections.forEach((section) => {
           section.style.display = section.id === targetId ? "block" : "none";
@@ -693,8 +614,10 @@
       });
     });
   </script>
+<!-- End filter services -->
 
 
+<!--  Start filter solutions -->
   <script>
     const filterButtonses = document.querySelectorAll(".filter-btn");
     const serviceSectionses = document.querySelectorAll(".services-section");
@@ -726,7 +649,10 @@
       });
     });
   </script>
+<!-- End filter solutions -->
 
+
+<!-- Start Popup -->
   <script>
     const form = document.querySelector('.service-form');
     const popup = document.getElementById('successPopup');
@@ -740,15 +666,16 @@
       popup.style.display = 'none';
     });
   </script>
+<!-- End Popup -->
 
-
+<!-- 
   <script>
-    function toggleMenu() {
+    function Menu() {
       const menu = document.getElementById("mobileMenu");
       menu.classList.toggle("active");
     }
 
-  </script>
+  </script> -->
 
 
 </body>
