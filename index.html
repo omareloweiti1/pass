@@ -557,9 +557,10 @@
 
 
 
-  
+
   <!-- Start mobileMenu -->
   <script>
+    //  open menu and cloos and go to link and cloos menu
     function Menu() {
       const mobileMenu = document.getElementById("mobileMenu");
       mobileMenu.classList.toggle("active");
@@ -591,7 +592,6 @@
       moreText.style.display = "none";
       dots.style.display = "inline";
       toggleBtn.style.display = "inline";
-      // optional: scroll back to summary
       summary.scrollIntoView({ behavior: 'smooth' });
     });
   </script>
@@ -627,17 +627,13 @@
       'distribution-management': 'distribution-solutions'
     };
 
-
     filterButtonses.forEach(btn => {
       btn.addEventListener("click", () => {
         const targetId = btn.getAttribute("data-target");
-
-        // 🔹 1. إظهار القسم المطلوب من الخدمات
         serviceSectionses.forEach(section => {
           section.style.display = section.id === targetId ? "block" : "none";
         });
 
-        // 🔸 2. إظهار "حزمة حلولنا" فقط إن كانت تابعة للقسم
         const allSolutions = document.querySelectorAll(".solutions-section");
         allSolutions.forEach(sol => sol.style.display = "none");
 
@@ -667,16 +663,6 @@
     });
   </script>
 <!-- End Popup -->
-
-<!-- 
-  <script>
-    function Menu() {
-      const menu = document.getElementById("mobileMenu");
-      menu.classList.toggle("active");
-    }
-
-  </script> -->
-
 
 </body>
 
