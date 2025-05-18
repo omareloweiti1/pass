@@ -175,8 +175,11 @@ a i {
   .mobile-links {
     margin-top: 40px;
     gap: 16px;
-    margin-top: -400px ;
+    margin-top: -400px !important;  
   }
+
+
+  /* d  */
 
   .mobile-links a {
     font-size: 18px;
