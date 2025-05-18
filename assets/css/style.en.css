@@ -1,0 +1,116 @@
+.navbar {
+  margin-left: 100px;
+}
+
+
+@media (max-width: 767px) {
+  .menu-toggle {
+    right: 0px !important;
+  }
+}
+
+.heroImge {
+  text-align: right;
+}
+.heroText {
+  text-align: left;
+}
+.heroText h1 {
+  text-align: left;
+}
+
+.heroText h3 {
+  height: auto;
+  max-height: 100px;
+}
+
+
+.serviceses {
+  direction: ltr;
+}
+
+.service-content {
+  text-align: left;
+}
+ 
+.service-text {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.service-text h3 {
+   height: auto;
+  max-height: 100px;
+  text-align: left;
+}
+.service-text p {
+  text-align: left;
+}
+
+
+.solution-card p {
+  padding-left: 55px;
+}
+
+
+.service-request-section {
+  direction: ltr;
+}
+
+.form-group {
+  text-align: left;
+}
+
+
+.site-footer {
+  direction: ltr;
+}
+
+.footer-logo {
+  margin-top: 40px;
+  margin-left: 100px;
+}
+
+.social-icons {
+  margin-left: 110px;
+}
+
+.marg{
+  margin-left: 100px;
+  margin-right: 0px;
+}
+
+@media (max-width: 1024px) {
+  .marg{
+  margin-left: 0px;
+  margin-right: 0px;
+
+}
+}
+
+
+
+.solution-card p {
+  padding-right: 0px;
+  padding-left: 55px;
+}
+
+.distribution {
+  width: auto;
+  max-width: 150px;
+  height: 45px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.service-image img {
+  width: auto;
+  max-width: 480px;
+  height: auto;
+  justify-content: flex-end;
+  align-items: flex-end;
+  max-height: 490px;
+  margin-right: 0px;
+  margin-left: 80px;
+}
