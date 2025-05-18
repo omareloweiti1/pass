@@ -2197,13 +2197,9 @@ h1, h2, h3, h4, p {
 
 
 .marg{
-  margin-right: 100px;
+  margin-right: 200px !important;
 }
 
 
-@media (max-width: 1024px) {
-  .marg{
-  margin-right: 0px;
-}
-}
+
 
