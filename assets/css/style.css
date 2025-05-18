@@ -2197,7 +2197,7 @@ h1, h2, h3, h4, p {
 
 
 .marg{
-  margin-right: 200px !important;
+  margin-right: 200px ;
 }
 
 @media (max-width: 1024px) {
