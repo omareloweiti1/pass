@@ -25,6 +25,87 @@
 }
 
 
+@media (max-width: 768px) {
+  .heroSection {
+    width: auto;
+    max-width: 768px;
+    height: auto;
+    max-height: 600px;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: right;
+    gap: 20px;
+    padding: 0 20px;
+    margin: 50px auto 0;
+  }
+
+  .heroImge {
+    order: 0;
+    width: 100%;
+    max-width: 768px;
+    height: auto;
+    text-align: left;
+  }
+
+  .heroImge img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .heroText {
+    order: 1;
+    width: 100%;
+    text-align: center;
+  }
+
+  .heroText h1 {
+    font-size: 32px;
+    font-weight: 600;
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .heroText h3 {
+    margin-top: 0;
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+
+  .request-services-btn {
+    font-size: 16px;
+    padding: 10px 24px;
+  }
+}
+
+  .services-section .request-service-btn {
+
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-left: 100px;
+  }
+
+.request-service-btn {
+  background-color: #42a9c4;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 160px;
+  height: 54px;
+  cursor: pointer;
+}
+
+
+
 .serviceses {
   direction: ltr;
 }
