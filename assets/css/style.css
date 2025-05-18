@@ -175,7 +175,7 @@ a i {
   .mobile-links {
     margin-top: 40px;
     gap: 16px;
-    margin-top: -400px !important;
+    margin-top: -100px !important;
   }
 
   .mobile-links a {
