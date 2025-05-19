@@ -133,18 +133,24 @@ a i {
     display: none;
   }
 
-  .menu-toggle {
-    display: block;
-    font-size: 24px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: #000;
-    order: 1;
-    position: absolute;
-    left: 16px;
-    top: 10px;
-  }
+.menu-toggle {
+  display: block;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #000;
+  position: absolute;
+  top: 10px;
+}
+
+:dir(ltr) .menu-toggle {
+  right: 16px;
+}
+
+:dir(rtl) .menu-toggle {
+  left: 16px;
+}
 
   .line {
     display: block;
@@ -510,7 +516,7 @@ a i {
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .menu-close {
-    margin-left: 45px;
+    margin-left: 5px;
     display: flex;
     align-items: center;
     gap: 12px;
@@ -536,6 +542,7 @@ a i {
     justify-content: space-between;
     padding: 20px;
   }
+
 }
 
 /* End mboile  */
@@ -1162,16 +1169,15 @@ a i {
   }
 
   .services-section .request-service-btn {
-
     font-size: 16px;
-    padding: 10px 20px;
+    padding: 10px 0px;
     margin-top: 10px;
     margin-right: 100px;
   }
   .services-section .service-image {
     order: 0;
     margin-top: 0px;
-    margin-left: 20px;
+    margin-left: 0px;
   }
 
   .services-section .service-text {
